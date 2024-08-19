@@ -1,0 +1,136 @@
+{
+	"files.insertFinalNewline": true,
+	"files.trimTrailingWhitespace": true,
+
+	"scm.defaultViewMode": "tree",
+
+	"workbench.colorCustomizations": {
+		"editorCursor.foreground": "#d0d0d0",
+		"editor.lineHighlightBackground": "#60616546"
+	},
+
+	"javascript.updateImportsOnFileMove.enabled": "always",
+
+	"editor.inlineSuggest.enabled": true,
+	"editor.quickSuggestions": {
+		"strings": true
+	},
+	"editor.wordWrap": "on",
+	"editor.insertSpaces": false,
+	"editor.lineHeight": 1.5,
+	"editor.letterSpacing": 0.5,
+	"editor.fontFamily": "'Input Mono', Monaco",
+	"editor.minimap.enabled": false,
+	"editor.lineNumbers": "relative",
+	"breadcrumbs.enabled": false,
+
+	// Vim settings
+	"vim.leader": "<Space>",
+	"vim.easymotion": true,
+	"vim.incsearch": true,
+	"vim.ignorecase": true,
+	"vim.hlsearch": true,
+	"vim.useSystemClipboard": true,
+	"vim.normalModeKeyBindingsNonRecursive": [
+		// navigation
+		// switch buffer
+		{
+			"before": ["<S-h>"],
+			"commands": [":bprevious"]
+		},
+		{
+			"before": ["<S-l>"],
+			"commands": [":bnext"]
+		},
+
+		// split window
+		{
+			"before": ["leader", "v"],
+			"commands": [":vsplit"]
+		},
+		{
+			"before": ["leader", "s"],
+			"commands": [":split"]
+		},
+
+		// switch window
+		{
+			"before": ["leader", "h"],
+			"commands": ["workbench.action.focusLeftGroup"]
+		},
+		{
+			"before": ["leader", "j"],
+			"commands": ["workbench.action.focusBelowGroup"]
+		},
+		{
+			"before": ["leader", "k"],
+			"commands": ["workbench.action.focusAboveGroup"]
+		},
+		{
+			"before": ["leader", "l"],
+			"commands": ["workbench.action.focusRightGroup"]
+		},
+
+		// nice to have
+		{
+			"before": ["leader", "w"],
+			"commands": [":w!"]
+		},
+		{
+			"before": ["leader", "q"],
+			"commands": [":q!"]
+		},
+		{
+			"before": ["leader", "x"],
+			"commands": [":x!"]
+		},
+
+		// jump to previous, next diagnostic
+		{
+			"before": ["[", "d"],
+			"commands": ["editor.action.marker.prev"]
+		},
+		{
+			"before": ["]", "d"],
+			"commands": ["editor.action.marker.prev"]
+		},
+
+		// quick fix
+		{
+			"before": ["<leader>", "c", "a"],
+			"commands": ["editor.action.quickFix"]
+		},
+
+		// show definition preview
+		{
+			"before": ["g", "h"],
+			"commands": ["editor.action.showDefinitionPreviewHover"]
+		},
+
+		// open search bar
+		{
+			"before": ["<leader>", "f"],
+			"commands": ["workbench.action.quickOpen"]
+		},
+
+		// format document
+		{
+			"before": ["<leader>", "p"],
+			"commands": ["editor.action.formatDocument"]
+		}
+	],
+	"vim.visualModeKeyBindings": [
+		{
+			"before": [">"],
+			"commands": ["editor.action.indentLines"]
+		},
+		{
+			"before": ["<"],
+			"commands": ["editor.action.outdentLines"]
+		},
+		{
+			"before": ["<leader>", "c"],
+			"commands": ["editor.action.commentLine"]
+		}
+	]
+}
