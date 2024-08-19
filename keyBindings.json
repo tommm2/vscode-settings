@@ -56,7 +56,6 @@
 		"when": "filesExplorerFocus && !inputFocus"
 	},
 
-
 	// Nice to have
 	{
 		"command": "workbench.action.nextEditor",
