@@ -56,14 +56,16 @@
 		"when": "filesExplorerFocus && !inputFocus"
 	},
 
-	// Nice to have
+	// Editor
 	{
 		"command": "workbench.action.nextEditor",
-		"key": "shift+l"
+		"key": "shift+l",
+		"when": "!editorTextFocus"
 	},
 	{
 		"command": "workbench.action.previousEditor",
-		"key": "shift+h"
+		"key": "shift+h",
+		"when": "!editorTextFocus"
 	},
 	{
 		"key": "ctrl+j",
@@ -84,5 +86,15 @@
 		"key": "ctrl+k",
 		"command": "workbench.action.quickOpenSelectPrevious",
 		"when": "inQuickOpen"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "selectNextCodeAction",
+		"when": "codeActionMenuVisible"
+	},
+	{
+		"key": "ctrl+k",
+		"command": "selectPrevCodeAction",
+		"when": "codeActionMenuVisible"
 	}
 ]
