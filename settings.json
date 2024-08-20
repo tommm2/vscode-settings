@@ -32,8 +32,7 @@
 	"vim.hlsearch": true,
 	"vim.useSystemClipboard": true,
 	"vim.normalModeKeyBindingsNonRecursive": [
-		// navigation
-		// switch buffer
+		// Switch buffer
 		{
 			"before": ["<S-h>"],
 			"commands": [":bprevious"]
@@ -43,7 +42,7 @@
 			"commands": [":bnext"]
 		},
 
-		// split window
+		// Split window
 		{
 			"before": ["leader", "v"],
 			"commands": [":vsplit"]
@@ -53,7 +52,7 @@
 			"commands": [":split"]
 		},
 
-		// switch window
+		// Switch window
 		{
 			"before": ["leader", "h"],
 			"commands": ["workbench.action.focusLeftGroup"]
@@ -71,7 +70,7 @@
 			"commands": ["workbench.action.focusRightGroup"]
 		},
 
-		// nice to have
+		// Nice to have
 		{
 			"before": ["leader", "w"],
 			"commands": [":w!"]
@@ -85,7 +84,7 @@
 			"commands": [":x!"]
 		},
 
-		// jump to previous, next diagnostic
+		// Jump to previous, next diagnostic
 		{
 			"before": ["[", "d"],
 			"commands": ["editor.action.marker.prev"]
@@ -95,25 +94,25 @@
 			"commands": ["editor.action.marker.prev"]
 		},
 
-		// quick fix
+		// Quick fix
 		{
 			"before": ["<leader>", "c", "a"],
 			"commands": ["editor.action.quickFix"]
 		},
 
-		// show definition preview
+		// Show definition preview
 		{
 			"before": ["g", "h"],
 			"commands": ["editor.action.showDefinitionPreviewHover"]
 		},
 
-		// open search bar
+		// Open search bar
 		{
 			"before": ["<leader>", "f"],
 			"commands": ["workbench.action.quickOpen"]
 		},
 
-		// format document
+		// Format document
 		{
 			"before": ["<leader>", "p"],
 			"commands": ["editor.action.formatDocument"]
