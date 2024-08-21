@@ -60,12 +60,12 @@
 	{
 		"command": "workbench.action.nextEditor",
 		"key": "shift+l",
-		"when": "!editorTextFocus"
+		"when": "!inputFocus"
 	},
 	{
 		"command": "workbench.action.previousEditor",
 		"key": "shift+h",
-		"when": "!editorTextFocus"
+		"when": "!inputFocus"
 	},
 	{
 		"key": "ctrl+j",
