@@ -56,7 +56,7 @@
 		"when": "filesExplorerFocus && !inputFocus"
 	},
 
-	// Editor
+	// Switch tab
 	{
 		"command": "workbench.action.nextEditor",
 		"key": "shift+l",
@@ -67,6 +67,8 @@
 		"key": "shift+h",
 		"when": "!inputFocus"
 	},
+
+	// move up or down in quick open or quick fix
 	{
 		"key": "ctrl+j",
 		"command": "extension.vim_ctrl+n",
